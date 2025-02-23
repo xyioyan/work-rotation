@@ -1,0 +1,30 @@
+.box {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: grab;
+  transition: background-color 0.3s;
+}
+
+/* "Worked" should be SOLID and UNMOVABLE */
+.box.worked {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* "Working" is draggable */
+.box.working {
+  background-color: yellow;
+  color: black;
+}
+
+/* "WillWork" is draggable and changes when swapped */
+.box.willWork {
+  background-color: lightblue;
+  color: black;
+}
